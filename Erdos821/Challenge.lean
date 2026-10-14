@@ -1,7 +1,7 @@
 import Mathlib
 
 /-!
-# Erdős Problem 821 (JSP-000677)
+# Erdős Problem 821
 
 Let `g n` be the number of natural numbers `m` with `φ(m) = n`. For `n ≥ 1` these `m` are positive;
 since `φ 0 = 0`, the only extra case is `g 0 = 1`. For every `ε > 0` there are infinitely many `n`
