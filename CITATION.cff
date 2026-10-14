@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite it using the metadata from this file."
+type: software
+title: "Large totient fibers (Erdős Problem 821), in Lean 4"
+abstract: >-
+  A Lean 4 formalization of OpenAI's theorem that for every epsilon > 0 there
+  are infinitely many n with more than n^(1 - epsilon) solutions m of
+  phi(m) = n (Erdős Problem 821), stated as Erdos821.erdos_821, together with
+  the smooth shifted-prime theorem it is derived from. The final theorem uses
+  only the axioms propext, Classical.choice and Quot.sound.
+authors:
+  - family-names: Xu
+    given-names: Yao
+    alias: cadamcat
+repository-code: "https://github.com/cadamcat/totient-fibers-lean4"
+url: "https://github.com/cadamcat/totient-fibers-lean4"
+license: Apache-2.0
+version: v1.0.0
+keywords:
+  - Lean 4
+  - formalization
+  - Euler's totient function
+  - smooth shifted primes
+  - Erdős problems
+references:
+  - type: article
+    authors:
+      - name: OpenAI
+    title: "Weighted dilation graphs, smooth shifted primes and totient fibers"
+    year: 2026
+    url: "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf"
+  - type: software
+    authors:
+      - name: OpenAI
+    title: "openai/math"
+    repository-code: "https://github.com/openai/math"
+    commit: adc7f1241b42e322a6451854ab7e4b4c146bf78a
+    license: Apache-2.0
+  - type: software
+    authors:
+      - name: The Formal Conjectures Authors
+    title: "Formal Conjectures"
+    repository-code: "https://github.com/google-deepmind/formal-conjectures"
+    commit: 317647fa3fc24ae900a50382186da1d22e4ea398
+    license: Apache-2.0
+  - type: software
+    authors:
+      - name: The mathlib Community
+    title: mathlib4
+    repository-code: "https://github.com/leanprover-community/mathlib4"
+    commit: d13f23b723b8a846827a245b89c10fc7d3f11612
+    license: Apache-2.0
