@@ -3,8 +3,9 @@ import Mathlib
 /-!
 # Erdős Problem 821 (JSP-000677)
 
-Let `g n` be the number of positive integers `m` with `φ(m) = n`. For every `ε > 0` there are
-infinitely many `n` with `g n > n ^ (1 - ε)`.
+Let `g n` be the number of natural numbers `m` with `φ(m) = n`. For `n ≥ 1` these `m` are positive;
+since `φ 0 = 0`, the only extra case is `g 0 = 1`. For every `ε > 0` there are infinitely many `n`
+with `g n > n ^ (1 - ε)`.
 
 The statement follows Formal Conjectures' `Erdos821.erdos_821` (Apache-2.0), with the answer `True`.
 -/

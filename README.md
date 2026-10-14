@@ -60,24 +60,24 @@ The script builds the library, the challenge and [Verification](Verification), c
 
 ## How the proof is organized
 
-The formal proof follows the paper. [Erdos821/Supply.lean](Erdos821/Supply.lean) states Theorem 1.2: for every `0 < δ < 1/4` and `σ > 0`, eventually at least `x^(1-σ)` primes `p` with `2x < p ≤ 5x` have every prime factor of `p - 1` at most `x^δ`. [Erdos821/Assembly.lean](Erdos821/Assembly.lean) derives Erdős 821 from it (the paper's §7), using OpenAI's finite fiber bound. [Erdos821/Blueprint/](Erdos821/Blueprint) fixes ten package interfaces P1–P10 for the proof of Theorem 1.2, and [Erdos821/Final/Assembly.lean](Erdos821/Final/Assembly.lean) assembles the package proofs into `Erdos821.Final.statement`.
+The formal proof follows the paper. [Erdos821/Supply.lean](Erdos821/Supply.lean) states Theorem 1.2: for every `0 < δ < 1/4` and `σ > 0`, eventually at least `x^(1-σ)` primes `p` with `2x < p ≤ 5x` have every prime factor of `p - 1` at most `x^δ`. [Erdos821/Assembly.lean](Erdos821/Assembly.lean) derives Erdős 821 from it (the paper's §8), using OpenAI's finite fiber bound. [Erdos821/Blueprint/](Erdos821/Blueprint) fixes ten package interfaces P1–P10 for the proof of Theorem 1.2, and [Erdos821/Final/Assembly.lean](Erdos821/Final/Assembly.lean) assembles the package proofs into `Erdos821.Final.statement`.
 
 The `Blueprint` modules state each package interface as a proposition (`X_statement`); each package proves it as a theorem, and `Erdos821.Final.packageInterfaces` assembles those proofs. The only `sorry` in the repository is the one in `Challenge.lean`, which Comparator requires.
 
 | Package | Paper | Interface |
 | --- | --- | --- |
-| P1 | §1 preliminary estimates: prime estimates, harmonic characters, divisor moments, mean values, derivative tests, Fourier separation | `classical_inputs` |
-| P2 | §1 block sieve | `sieve_inputs` |
-| P3 | §2 transference for dilation graphs | `transference_inputs` |
-| P4 | §3 small ideal kernels | `ideal_inputs` |
-| P5 | §4 lifted shifted correlations | `shifted_cancellation` |
-| P6 | §5 Type II estimate | `typeII_estimate` |
-| P7 | §6 candidate geometry, bounds and Type I estimate | `candidate_geometry`, `candidate_bounds`, `candidate_typeI` |
-| P8 | §6 proxies and densities | `proxy_inputs` |
-| P9 | §6 balanced rough bound | `balanced_rough_bound` |
-| P10 | §6 prime extraction and the count of primes | `prime_extraction`, `count_from_weighted_mass` |
+| P1 | §2 preliminary estimates: prime estimates, harmonic characters, divisor moments, mean values, derivative tests, Fourier separation | `classical_inputs` |
+| P2 | §2 block sieve | `sieve_inputs` |
+| P3 | §3 transference for dilation graphs | `transference_inputs` |
+| P4 | §4 small ideal kernels | `ideal_inputs` |
+| P5 | §5 lifted shifted correlations | `shifted_cancellation` |
+| P6 | §6 Type II estimate | `typeII_estimate` |
+| P7 | §7 candidate geometry, bounds and Type I estimate | `candidate_geometry`, `candidate_bounds`, `candidate_typeI` |
+| P8 | §7 proxies and densities | `proxy_inputs` |
+| P9 | §7 balanced rough bound | `balanced_rough_bound` |
+| P10 | §7 prime extraction and the count of primes | `prime_extraction`, `count_from_weighted_mass` |
 
-The library has 939 modules. Directories are named after their package (`P<k>…`) or after the paper's sections (`S2…` for §2, `S34…` for §3, `S56…` for §5, `S9…` and `S10…` for P9 and P10):
+The library has 939 modules. Directories are named after their package (`P<k>…`) or carry an earlier section label (`S2…` for P3, `S34…` for P4, `S56…` for P6, `S9…` for P9, `S10…` for P10):
 
 | Package | Directories (modules) |
 | --- | --- |
