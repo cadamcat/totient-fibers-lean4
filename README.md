@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README_zh.md)
+
 # Large totient fibers (Erdős Problem 821), in Lean 4
 
 For every `ε > 0` there are infinitely many `n` with more than `n^(1-ε)` solutions `m` of `φ(m) = n`. This resolves Erdős's conjecture on the largest fibers of Euler's totient function ([Erdős Problem #821](https://www.erdosproblems.com/821)), in the form stated by Formal Conjectures' `erdos_821` with the answer `True`.
