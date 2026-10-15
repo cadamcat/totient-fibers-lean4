@@ -4,7 +4,7 @@ For every `ε > 0` there are infinitely many `n` with more than `n^(1-ε)` solut
 
 - **Author:** Yao Xu ([@cadamcat](https://github.com/cadamcat)); see [authors and attribution](AUTHORS.md).
 - **Mathematical result:** OpenAI, [*Weighted dilation graphs, smooth shifted primes and totient fibers*](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf), Theorem 1.1, derived from Theorem 1.2 (smooth shifted primes).
-- Developed by the author with AI assistance; all proofs are verified by the Lean 4 kernel.
+- Developed with AI assistance; all proofs are verified by the Lean 4 kernel.
 
 ## Main result
 
