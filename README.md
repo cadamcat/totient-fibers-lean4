@@ -37,6 +37,8 @@ Formal Conjectures states `erdos_821 : answer(sorry) ↔ ∀ ε > (0 : ℝ), {n 
 
 Both count `m = 0` and `n = 0`. Since `φ 0 = 0`, the value `m = 0` lies only in the fiber of `n = 0`, so `g 0 = 1`; one value of `n` cannot change whether the set is infinite. Every fiber is finite, so `ncard` is the true count. [Erdos821/Fidelity/FormalConjectures.lean](Erdos821/Fidelity/FormalConjectures.lean) proves, with Formal Conjectures' definitions copied verbatim, that the target is equivalent to `erdos_821` with `answer(True)`, and also to the paper's Theorem 1.1, which counts only `m ≥ 1` and `n ≥ 1`.
 
+Google DeepMind's Formal Conjectures marks `Erdos821.erdos_821` as solved and links this proof as its formal proof ([821.lean](https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/821.lean), [PR #7314](https://github.com/google-deepmind/formal-conjectures/pull/7314)).
+
 ## Build and verify
 
 Requirements: Git, Python 3, and [elan](https://github.com/leanprover/elan), with `lake` on `PATH`. From the repository root:

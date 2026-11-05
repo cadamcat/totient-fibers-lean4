@@ -37,6 +37,8 @@ Formal Conjectures 将 `erdos_821 : answer(sorry) ↔ ∀ ε > (0 : ℝ), {n : �
 
 二者都计入 `m = 0` 和 `n = 0`。由于 `φ 0 = 0`，`m = 0` 只属于 `n = 0` 的纤维，因此 `g 0 = 1`；一个 `n` 的取值不可能改变该集合是否为无限集。每个纤维都是有限集，所以 `ncard` 给出的是真正的计数。[Erdos821/Fidelity/FormalConjectures.lean](Erdos821/Fidelity/FormalConjectures.lean) 逐字复制 Formal Conjectures 的定义，并证明目标等价于 `answer(True)` 时的 `erdos_821`，也等价于论文的定理 1.1；论文只计数 `m ≥ 1` 且 `n ≥ 1` 的情形。
 
+Google DeepMind 的 Formal Conjectures 仓库已将 `Erdos821.erdos_821` 标记为已解决，并把本仓库的证明链接为它的形式化证明（[821.lean](https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/821.lean)，[PR #7314](https://github.com/google-deepmind/formal-conjectures/pull/7314)）。
+
 ## 构建与验证
 
 环境要求：Git、Python 3 和 [elan](https://github.com/leanprover/elan)，并确保 `lake` 在 `PATH` 中。在仓库根目录运行：
